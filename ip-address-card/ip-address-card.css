@@ -1,0 +1,155 @@
+div#ip-address-card-w{
+    min-height: 100px;
+    background-color: #DFDFDF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+div.ip-address-card-header{
+    margin:5px 10px;
+    line-height: 30px;
+}
+.ip-address-card-sub-header{
+    margin:5px 10px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.ip-address-card-content{
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+.ip-address-card-footer{
+    padding-bottom: 5px;
+    background-color: #DFDFDF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+}
+.ip-address-card-sub-header span:last-child{
+    float:right;
+}
+div.ip-address-card-header img{
+    width: 22px;
+    vertical-align: middle;
+}
+.ip-address-card-spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+.ip-address-card-footer iframe{
+    width: 98%;
+    height: 98%;
+    margin: 0 auto;
+    display:block;
+}
+.ip-address-card-spinner > div {
+    background-color: #FFF;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.ip-address-card-spinner .ip-address-card-rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.ip-address-card-spinner .ip-address-card-rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.ip-address-card-spinner .ip-address-card-rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.ip-address-card-spinner .ip-address-card-rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+.ip-address-card-style-1{
+    background-color: #EC4444 !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-2{
+    background-color: #E68E4F !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-3{
+    background-color: #A6A539 !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-4{
+    background-color: #F27E7F !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-5{
+    background-color: #817871 !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-6{
+    background-color: #367DB5 !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-7{
+    background-color: #9770A7 !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-8{
+    background-color: #CE4571 !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.ip-address-card-style-9{
+    background-color: #3F3F3F !important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% { 
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
