@@ -13,7 +13,7 @@ WP-Admin / Appearance / Widgets
 
 Wordpress sidebar preview
 --
-![alt text](https://github.com/ponguincom/ip-address-card/blob/master/ip-address-card/ip-address-card-en.png)
+![alt text](https://github.com/ponguincom/ip-address-card-widget/blob/master/ip-address-card/ip-address-card-en.png)
 
 
 License
