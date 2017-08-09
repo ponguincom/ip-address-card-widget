@@ -9,7 +9,7 @@ Find more exemples and more informations on this [page](http://ip-address-card.p
 
 WP-Admin / Appearance / Widgets
 --
-![alt text](https://raw.githubusercontent.com/ponguincom/ip-address-card/master/ip-address-card/ip-address-card-admin-en.png)
+![alt text](https://github.com/ponguincom/ip-address-card-widget/blob/master/ip-address-card/ip-address-card-admin-en.png)
 
 Wordpress sidebar preview
 --
