@@ -1,7 +1,7 @@
 IP Address Card - Wordpress Widget Plugin
 =========
 
-Show the visitor's IP address, country, city, region, location (marker on Google map) in a widget. You can specify the information to be shown.
+Show the visitor's IP address, country, city, region, location (marker on Google map) in a widget. You can specify the information to be shown. English, DE, FR, RU language supports
 
 Demo
 -------
