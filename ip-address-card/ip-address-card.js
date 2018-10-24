@@ -30,7 +30,7 @@
                 var readData = function () {
                     before();
                     $.ajax({
-                        url: '//api.ponguin.com/api/ip/' + options.ip_address,
+                        url: 'http://ip-api.com/json/' + options.ip_address,
                         type: 'GET',
                         dataType: 'json',
                         async: true
@@ -40,31 +40,31 @@
                             template.addClass(options.style);
                         }
                         if (options.ip_address != false) {
-                            template.find('.ip-address-card-content').text(response.information.ip_address);
+                            template.find('.ip-address-card-content').text(response.query);
                         }
                         var address = $('<div/>');
-                        if (options.country_name != false && response.information.country_name != null) {
-                            address.append(response.information.country_name);
-                            if (options.country_flag != false && response.information.country_flag != null) {
-                                address.append($('<img/>').attr('src', response.information.country_flag));
+                        if (options.country_name != false && response.country != null) {
+                            address.append(response.country);
+                            if (options.country_flag != false && response.country_flag != null) {
+                                address.append($('<img/>').attr('src', response.country_flag));
                             }
                         }
-                        if (options.city_name != false && response.information.city_name != null) {
-                            address.prepend(response.information.city_name + " ,");
+                        if (options.city_name != false && response.city != null) {
+                            address.prepend(response.city + " ,");
                         }
-                        if (options.region_name != false && response.information.region_name != null) {
-                            address.prepend(response.information.region_name + " ,");
+                        if (options.region_name != false && response.regionName != null) {
+                            address.prepend(response.regionName + " ,");
                         }
                         template.find('.ip-address-card-header').append(address);
 
-                        if (options.zip_code != false && response.information.zip_code != null) {
-                            template.find('.ip-address-card-sub-header').append('<span>' + options.zip_code + ' ' + response.information.zip_code + '</span>');
+                        if (options.zip_code != false && response.zip != null) {
+                            template.find('.ip-address-card-sub-header').append('<span>' + options.zip_code + ' ' + response.zip + '</span>');
                         }
-                        if (options.time_zone != false && response.information.time_zone != null) {
-                            template.find('.ip-address-card-sub-header').append('<span>' + options.time_zone + ' ' + response.information.time_zone + '</span>');
+                        if (options.time_zone != false && response.timezone != null) {
+                            template.find('.ip-address-card-sub-header').append('<span>' + options.time_zone + ' ' + response.timezone + '</span>');
                         }
                         if (options.map != false) {
-                            template.find('.ip-address-card-footer').append('<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=' + response.information.latitude + ',' + response.information.longitude + '&hl=es;z=14&amp;output=embed"></iframe>')
+                            template.find('.ip-address-card-footer').append('<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=' + response.lat + ',' + response.lon + '&hl=es;z=14&amp;output=embed"></iframe>')
                         }
                         $this.html(template);
 
